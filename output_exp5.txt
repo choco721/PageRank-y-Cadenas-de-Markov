@@ -1,0 +1,118 @@
+>> exp5_case118
+=====================================================
+EXPERIMENTO 5: IEEE 118 Bus Test Case (datos reales)
+=====================================================
+
+warning: time stamp for 'C:\Users\juanc\OneDrive\Desktop\pagerank_mcn\cargar_case118.m' is in the future
+warning: called from
+    exp5_case118 at line 33 column 2
+
+warning: time stamp for 'C:\Users\juanc\OneDrive\Desktop\pagerank_mcn\case118.m' is in the future
+warning: called from
+    cargar_case118 at line 62 column 3
+    exp5_case118 at line 33 column 2
+
+IEEE 118 Bus Test Case cargado:
+  Buses   : 118
+  Ramas   : 186
+  Slack bus (ref): 1  -> bus 69
+  Generadores PV : 53
+  Cargas PQ      : 64
+
+Metodo de la potencia - PageRank
+n = 118 nodos | p = 0.85 | tol = 1.00e-08
+
+  Iter  Error (norma 1)
+-------------------------
+     1         4.31e-01
+     2         2.05e-01
+     3         1.25e-01
+     4         8.37e-02
+     5         5.74e-02
+    10         1.13e-02
+    20         5.79e-04
+    30         3.46e-05
+    40         2.42e-06
+    50         2.03e-07
+    60         2.23e-08
+    64         9.76e-09  <- convergio
+
+Convergencia alcanzada en 64 iteraciones.
+Suma del vector pi: 1.0000000000 (debe ser 1)
+
+Top 10 buses mas criticos (mayor impacto sistemico):
+-----------------------------------------------------------------
+ Rank  Bus IEEE        Tipo          pi_i  Demanda MW
+-----------------------------------------------------------------
+    1        49    PV (gen)      0.021357        87.0
+    2        12    PV (gen)      0.019730        47.0
+    3       100    PV (gen)      0.019372        37.0
+    4        80    PV (gen)      0.017283       130.0
+    5        17  PQ (carga)      0.015830        11.0
+    6        37  PQ (carga)      0.015741         0.0
+    7        92    PV (gen)      0.015195        65.0
+    8        77    PV (gen)      0.014678        61.0
+    9        85    PV (gen)      0.014477        24.0
+   10        69  Slack (ref)      0.014140         0.0
+
+Analisis por tipo de bus:
+--------------------------------------------------
+  Slack bus      : pi = 0.014140
+  Generadores PV : media=0.009602 | max=0.021357 | min=0.003587
+  Cargas PQ      : media=0.007452 | max=0.015830 | min=0.003667
+
+Validacion estructural:
+--------------------------------------------------
+  [OK] Generadores tienen mayor impacto promedio que cargas
+       media_gen=0.009602 > media_carga=0.007452
+  [OK] Slack bus en top 20% (rank 10 de 118)
+
+Top 10% (12 buses) concentra 19.6% del impacto sistemico total
+
+Convergencia: 64 iteraciones | error final: 9.76e-09
+sum(pi) = 1.0000000000
+
+Comparacion con red sintetica (exp4):
+--------------------------------------------------
+  Red sintetica (42 nodos)  : converge en ~20 iter
+  IEEE 118 bus (118 nodos)  : converge en 64 iter
+  -> Iteraciones practicamente iguales: confirma O(k*n)
+     donde k es aproximadamente independiente de n
+
+warning: text_renderer: skipping missing glyph for character '80'
+warning: called from
+    __axis_label__ at line 38 column 6
+    title at line 64 column 3
+    exp5_case118 at line 124 column 1
+
+warning: text_renderer: skipping missing glyph for character '94'
+warning: called from
+    __axis_label__ at line 38 column 6
+    title at line 64 column 3
+    exp5_case118 at line 124 column 1
+
+warning: text_renderer: skipping missing glyph for character '80'
+warning: called from
+    __axis_label__ at line 38 column 6
+    title at line 64 column 3
+    exp5_case118 at line 124 column 1
+
+warning: text_renderer: skipping missing glyph for character '94'
+warning: called from
+    __axis_label__ at line 38 column 6
+    title at line 64 column 3
+    exp5_case118 at line 124 column 1
+
+warning: text_renderer: skipping missing glyph for character '80'
+warning: called from
+    __axis_label__ at line 38 column 6
+    title at line 64 column 3
+    exp5_case118 at line 135 column 1
+
+warning: text_renderer: skipping missing glyph for character '94'
+warning: called from
+    __axis_label__ at line 38 column 6
+    title at line 64 column 3
+    exp5_case118 at line 135 column 1
+
+warning: text_renderer: skipping missing glyph for character '80'

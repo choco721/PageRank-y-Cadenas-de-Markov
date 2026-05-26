@@ -1,0 +1,52 @@
+=========================================================================
+INSTRUCCIONES PARA CORRER EL EXPERIMENTO 5 (IEEE 118 Bus)
+=========================================================================
+
+PASO 1 — Descargar case118.m
+--------------------------------
+Ir a:
+https://github.com/MATPOWER/matpower/blob/master/data/case118.m
+
+Hacer click en el boton "Raw" (arriba a la derecha del codigo)
+Ctrl+S para guardar el archivo como: case118.m
+Copiarlo a la carpeta del proyecto (donde estan los otros .m)
+
+PASO 2 — Verificar en Octave
+--------------------------------
+>> ls
+Debe aparecer case118.m junto a los otros archivos.
+
+PASO 3 — Correr el experimento
+--------------------------------
+>> exp5_case118
+
+QUE ESPERAR:
+- Convergencia en ~40-50 iteraciones (similar al exp1)
+- El slack bus (bus 69) debe estar en el top 20%
+- Los generadores PV deben tener mayor pi promedio que cargas PQ
+- sum(pi) = 1.0000000000
+
+SI APARECE ERROR "case118 undefined":
+- Verificar que case118.m esta en la misma carpeta
+- O agregar la carpeta al path: addpath('ruta/a/la/carpeta')
+
+=========================================================================
+POR QUE ESTE EXPERIMENTO ES IMPORTANTE
+=========================================================================
+
+Con la red sintetica (exp4) el proyecto afirmaba cosas sobre
+"redes de infraestructura" sin tener datos reales.
+
+Con el IEEE 118 Bus Test Case:
+- Los datos son reales (red electrica de referencia mundial)
+- La topologia es conocida y documentada
+- Los nodos criticos que identifica PageRank se pueden comparar
+  contra lo que dice la literatura de power systems
+- El argumento de escalabilidad O(k*n) se puede verificar:
+  118 nodos deberian converger en ~mismas iteraciones que 42 nodos
+
+CITA CORRECTA PARA EL INFORME:
+"IEEE 118 Bus Test Case, University of Washington Power Systems
+Test Case Archive, datos originales de 1961, formato MATPOWER
+(Zimmerman et al., IEEE Trans. Power Syst. 26(1):12-19, 2011)"
+=========================================================================
