@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(\"C:\\\\Octave\\\\mingw64\\\\bin\\\\octave-cli.exe\" --no-gui exp1_seis_nodos.m)",
-      "PowerShell(Get-Command *)"
-    ]
-  }
-}
