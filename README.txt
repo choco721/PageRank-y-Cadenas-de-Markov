@@ -2,7 +2,7 @@
 PROYECTO: Identificacion de nodos criticos en redes de infraestructura
           mediante PageRank y Cadenas de Markov
 MATERIA : Metodos y Computos Numericos - UCA Rosario 2025
-EQUIPO  : Agu (teoria) | Vicky (codigo) | Choco (experimentos)
+EQUIPO  : Agustín Formenti | Victoria Ortiz | Juan Cruz Chocobares
 SOFTWARE: GNU Octave (compatible MATLAB)
 =========================================================================
 
