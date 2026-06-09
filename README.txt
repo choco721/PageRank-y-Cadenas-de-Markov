@@ -160,6 +160,3 @@ Validación estructural: generadores PV tienen mayor impacto promedio que cargas
 - Ponzellini, G. (2025). Lecturas L5, L7, L8, L9 — Métodos y Cómputo Numéricos. UCA Rosario.
 - Zimmerman, R. et al. (2011). MATPOWER: Steady-State Operations, Planning, and Analysis Tools for Power Systems Research and Education. *IEEE Trans. Power Syst.*, 26(1):12-19.
 
----
-
-Claude AI (Anthropic) fue utilizado para asistencia en redacción de comentarios y estructura del código. Todo el contenido matemático fue verificado contra Moler (2004) y las lecturas del curso.
